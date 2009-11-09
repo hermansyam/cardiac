@@ -2589,8 +2589,11 @@ class abdomenModule extends mainModule
     }
 
 <<<<<<< HEAD:modules/abdomen/abdomen.class.inc
+<<<<<<< HEAD:modules/abdomen/abdomen.class.inc
     
 =======
+=======
+>>>>>>> 876626671e4ea37224d40b8998420e0af4a6c6dc:modules/abdomen/abdomen.class.inc
 //Kenapa punya Pak Herman Ilang ?
     function ref_perkusi_view(){
         $result = array();
