@@ -2367,6 +2367,7 @@ class abdomenModule extends mainModule
         redirect_to('/reference/abdomen_inspeksi_ginjal');
     }
 
+//Kenapa punya Pak Herman Ilang ?
     function ref_perkusi_view(){
         $result = array();
         $result['type'] = 'table';
