@@ -19,13 +19,13 @@
  *  
  *  config.php
  *  
- *  Created on Oct 1, 2009, 1:10:09 PM
+ *  Created on Oct 3, 2009, 8:37:06 PM
  */
 
-class ekgConfig extends config
+class fekgConfig extends config
 {
     var $rdbms = 'mysql';
-    var $dbekg = array(
+    var $dbfekg = array(
         'name' => 'layanan_kesehatan',
         'prefix' => '',
         'suffix' => '',
@@ -36,50 +36,20 @@ class ekgConfig extends config
         'passwd' => 'emmank'
     );
     var $hiddenfields = array(
-        'id', 'id_pasien'
+        'id'
     );
-    var $fields_form_type = array(
+    var $fekgfieldstype = array(
         'id' => 'hidden',
-        'patients' => 'hidden',
-        'tgl' => 'hidden',
+        'id_pasien' => 'hidden',
         'irama_dasar' => 'select',
         'denyut_jantung' => 'select',
-        'gelombang_p' => 'select',
+        'gelombnag_p' => 'select',
         'interval_pr' => 'select',
-        'qrs_axis' => 'select',
+        'qrs_complex' => 'select',
         'qrs_durasi' => 'select',
         'qrs_konfig' => 'select',
-        'segmen_st' => 'select',
+        'segment_st' => 'select',
         'gelombang_t' => 'select',
         'q_interval' => 'select',
-        'inputer' => 'hidden',
-        'inputtime' => 'hedden',
-        'updated' => 'hedden'
-    );
-
-    var $fieldsisarray = array(
-        'irama_dasar',
-        'denyut_jantung',
-        'gelombang_p',
-        'interval_pr',
-        'qrs_axis',
-        'qrs_durasi',
-        'qrs_konfig',
-        'segmen_st',
-        'gelombang_t',
-        'q_interval'
-    );
-
-    var $reftable = array(
-        'irama_dasar' => array('ref_ekg_irama','irama'),
-        'denyut_jantung' => array('ref_ekg_denyut_jantung', 'denyut_jantung'),
-        'gelombang_p' => array('ref_ekg_gelombangP', 'gelombangP'),
-        'interval_pr' => array('ref_ekg_intervalPR', 'intervalPR'),
-        'qrs_axis' => array('ref_ekgQrs_axis', 'axis'),
-        'qrs_durasi' => array('ref_ekgQrs_durasi', 'durasi'),
-        'qrs_konfig' => array('ref_ekgQrs_konfig', 'konfig'),
-        'segmen_st' => array('ref_ekgst_depresi', 'depresi'),
-        'gelombang_t' => array('ref_ekg_gelombang_t', 'gelombang_t'),
-        'q_interval' => array('ref_ekg_q_interval', 'q_interval')
     );
 }

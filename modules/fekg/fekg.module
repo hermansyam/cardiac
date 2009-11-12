@@ -17,28 +17,28 @@
  *  with this program; if not, write to the Free Software Foundation, Inc., 
  *  59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  *  
- *  cardio.php
+ *  fekg.php
  *  
- *  Created on Oct 1, 2009, 1:11:20 PM
+ *  Created on Oct 3, 2009, 8:38:26 PM
  */
 
-require_once MODULES_DIR . DS . 'ekg' . DS . 'ekg.class.inc';
+require_once MODULES_DIR . DS . 'fekg' . DS . 'fekg.class.inc';
 
-if(!isset($ekg_config)){
-    $ekg_config = new ekgConfig();
-} elseif(!$ekg_config instanceof ekgConfig) {
-    $ekg_config = new ekgConfig();
+if(!isset($fekg_config)){
+    $fekg_config = new fekgConfig();
+} elseif(!$fekg_config instanceof fekgConfig) {
+    $fekg_config = new fekgConfig();
 }
 
-require_once DBSTRINGS_DIR . DS . $ekg_config->rdbms . DS . 'dbquery.php';
-if(!isset($ekg_query)){
-    $ekg_query = new dbset();
-} elseif(!$ekg_query instanceof dbset) {
-    $ekg_query = new dbset();
+require_once DBSTRINGS_DIR . DS . $fekg_config->rdbms . DS . 'dbquery.php';
+if(!isset($fekg_query)){
+    $fekg_query = new dbset();
+} elseif(!$fekg_query instanceof dbset) {
+    $fekg_query = new dbset();
 }
 
-if(!isset($ekg_exec)){
-    $ekg_exec = new ekgModule();
-} elseif(!$ekg_exec instanceof ekgModule) {
-    $ekg_exec = new ekgModule();
+if(!isset($fekg_exec)){
+    $fekg_exec = new fekgModule();
+} elseif(!$fekg_exec instanceof fekgModule) {
+    $fekg_exec = new fekgModule();
 }
